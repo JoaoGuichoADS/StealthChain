@@ -51,7 +51,7 @@
         <div class="card p-3">
           <h5>🔐 Último Dado Criptografado</h5>
           <div class="crypto-box" id="encryptedData">
-            ENC(GPS, Chave Pública): eyJhbGciOiJFUzI1NiIsInR5cCIgOiAiSldU... (simulação)
+            ENC(GPS, Chave Pública): eyJhbGciOiJFUzI1NiIsInR5cCIgOiAiSldU...
           </div>
           <button class="btn btn-primary mt-3" onclick="decryptGPS()">🔓 Descriptografar</button>
         </div>
@@ -89,7 +89,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    let map = L.map('map').setView([-15.7801, -47.9292], 5);
+    let map = L.map('map').setView([-22.98, -49.87], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap'
     }).addTo(map);
@@ -98,7 +98,7 @@
     let blockchain = [];
 
     function decryptGPS() {
-      const gps = "-15.834, -48.021";
+      const gps = "-22.98, -49.87";
       const time = new Date().toISOString();
 
       document.getElementById("gpsCoord").textContent = gps;
